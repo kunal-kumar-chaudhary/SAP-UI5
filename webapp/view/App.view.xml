@@ -1,8 +1,4 @@
-<view controllerName="sap.ui.demo/walkthrough.controller.App" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc">
-	<Button text="hello from UI5" press=".onShowHello" />
-    <Input 
-    value="{/recipient/name}"
-    description="Hello {/recipient/name}"
-    valueLiveUpdate="true"
-    width="60%"/>
-</view>
+<View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="sap.ui.demo.walkthrough.controller.App">
+	<Button text="{i18n>showHelloButtonText}" press=".onShowHello" />
+	<Input value="{/recipient/name}" description="Hello {/recipient/name}" valueLiveUpdate="true" width="60%" />
+</View>
