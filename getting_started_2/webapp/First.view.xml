@@ -1,0 +1,73 @@
+<mvc:View
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:l="sap.ui.layout"
+    xmlns:tnt="sap.tnt"
+    controllerName="app.First"
+>
+    <App>
+        <Page title="Learn about UI5">
+            <Panel
+                expandable="true"
+                expanded="true"
+                headerText="Learn about Properties"
+            >
+                <TextArea
+                    cols="20"
+                    placeholder="Enter Some Text"
+                    height="10rem"
+                    liveChange="CopyToSecondTextArea"
+                />
+            </Panel>
+            <Panel
+                expandable="true"
+                expanded="true"
+                headerText="Learn about events and methods"
+            >
+                <TextArea
+                    id="copy_text_area"
+                    height="10rem"
+                    editable="false"
+                />
+            </Panel>
+            <Panel headerText="Learn about aggregration">
+                <Table>
+                    <headerToolbar>
+                        <Toolbar>
+                            <Title text="Employees" />
+                        </Toolbar>
+                    </headerToolbar>
+                    <columns>
+                        <Column>
+                            <Label text="First Name" />
+                        </Column>
+                        <Column>
+                            <Label text="Last Name" />
+                        </Column>
+                        <Column>
+                            <Label text="Age" />
+                        </Column>
+                        <Column>
+                            <Label text="Email" />
+                        </Column>
+                    </columns>
+                    <items>
+                        <ColumnListItem>
+                            <Text text="Kunal"/>
+                            <Text text="Kumar"/>
+                            <Text text="23"/>
+                            <Text text="kkunal644@gmail.com"/>
+                        </ColumnListItem>
+                        <ColumnListItem>
+                            <Text text="Arshleen"/>
+                            <Text text="Sodhi"/>
+                            <Text text="21"/>
+                            <Text text="arshleensodhi14@gmail.com"/>
+                        </ColumnListItem>
+                    </items>
+                </Table>
+            </Panel>
+        </Page>
+    </App>
+</mvc:View>

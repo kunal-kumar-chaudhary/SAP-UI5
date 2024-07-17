@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <script
+      id="sap-ui-bootstrap"
+      src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+      data-sap-ui-libs="sap.m, sap.ui.layout, sap.tnt, sap.ui.core"
+      data-sap-ui-theme="sap_fiori_3_dark"
+      data-sap-ui-onInit="module:demoproject/index"
+      data-sap-ui-compatVersion="edge"
+      data-sap-ui-async="true"
+      data-sap-ui-resourceroots='{
+        "demoproject": "./"}'
+    ></script>
+    <!-- moved below script to a seperate file -->
+    <!-- <script>
+      var oView = new sap.ui.view({
+        viewName: "demoproject.Main",
+        type: "XML",
+      });
+      oView.placeAt("content");
+    </script> -->
+  </head>
+  <body class="sapUiBody">
+    <div id="content"></div>
+  </body>
+</html>
