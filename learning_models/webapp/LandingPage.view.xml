@@ -7,11 +7,11 @@
     controllerName="app.LandingPage"
 >
     <App>
-        <Page title="UI5 Model and Binding">
+        <Page title="{i18n>pageTitle}">
             <TextArea value="{/message}" height="20rem"/>
             <Button
                 class="sapUiMarginBegin"
-                text="Show Data"
+                text="{i18n>btnText}"
                 press="onPress"
             />
         </Page>
