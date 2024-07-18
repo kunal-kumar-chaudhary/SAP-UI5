@@ -1,0 +1,19 @@
+<mvc:View
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:l="sap.ui.layout"
+    xmlns:tnt="sap.tnt"
+    controllerName="app.LandingPage"
+>
+    <App>
+        <Page title="UI5 Model and Binding">
+            <TextArea value="{/message}" height="20rem"/>
+            <Button
+                class="sapUiMarginBegin"
+                text="Show Data"
+                press="onPress"
+            />
+        </Page>
+    </App>
+</mvc:View>
